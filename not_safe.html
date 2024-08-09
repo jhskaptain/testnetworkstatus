@@ -41,11 +41,12 @@
     <div class="warning-icon">&#9888;</div>
     <h1>This Network is NOT Safe</h1>
     <p>Please avoid using this network for sensitive activities.</p>
-    <button class="button" onclick="goBack()">Go Back</button>
+    <button class="button" onclick="closeWindow()">Close Window</button>
 
     <script>
-        function goBack() {
-            window.history.back();  // Goes back to the previous page
+        function closeWindow() {
+            window.open('', '_self', '');  // Open the same window
+            window.close();  // Close the window
         }
     </script>
 </body>
